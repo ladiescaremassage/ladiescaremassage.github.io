@@ -1,10 +1,9 @@
-let slides = document.querySelectorAll(".slide");
+let slides=document.querySelectorAll(".slide");
 
-let current = 0;
+let current=0;
 
 
-setInterval(function(){
-
+setInterval(()=>{
 
 slides[current].classList.remove("active");
 
@@ -12,9 +11,9 @@ slides[current].classList.remove("active");
 current++;
 
 
-if(current >= slides.length){
+if(current>=slides.length){
 
-current = 0;
+current=0;
 
 }
 
