@@ -1,472 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ladies Care Massage | Professional Home Massage in Lahore</title>
+<title>Ladies Care Massage | Home Massage for Women in Lahore</title>
 
-    <meta name="description" content="Ladies Care Massage provides professional home massage services exclusively for women in Lahore. Relax, refresh and feel better in the comfort of your home.">
+<meta name="description"
+content="Ladies Care Massage provides professional home massage services for women in Lahore including DHA, Gulberg, Model Town, Johar Town, Wapda Town and Faisal Town.">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+<style>
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background: #fffaf8;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-        header {
-            background: #5b2746;
-            color: white;
-            padding: 18px 7%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+body{
+    font-family:Arial, sans-serif;
+    background:#fffaf7;
+    color:#422638;
+}
 
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: auto;
-        }
+/* ================= HEADER ================= */
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:white;
+    box-shadow:0 3px 20px rgba(0,0,0,.08);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 22px;
-            font-weight: 600;
-        }
+.nav{
+    max-width:1200px;
+    margin:auto;
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
 
-        nav a:hover {
-            color: #ffd8e8;
-        }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#8d255c;
+    font-size:22px;
+    font-weight:bold;
+}
 
-        .hero {
-            min-height: 650px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(
-                rgba(91,39,70,0.88),
-                rgba(91,39,70,0.88)
-            ),
-            url("images/massage-1.jpg") center/cover;
-            color: white;
-        }
+.logo-icon{
+    width:52px;
+    height:52px;
+    border:3px solid #b62f72;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+}
 
-        .hero-content {
-            max-width: 850px;
-        }
+.logo small{
+    display:block;
+    font-size:10px;
+    letter-spacing:4px;
+    color:#b62f72;
+}
 
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
-        }
+nav{
+    display:flex;
+    gap:25px;
+}
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
+nav a{
+    text-decoration:none;
+    color:#54263f;
+    font-weight:bold;
+}
 
-        .btn {
-            display: inline-block;
-            background: #d58aa8;
-            color: white;
-            padding: 14px 28px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 5px;
-        }
+nav a:hover{
+    color:#b62f72;
+}
 
-        .btn:hover {
-            background: #bd6f91;
-        }
+.whatsapp{
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:11px 20px;
+    border-radius:25px;
+    font-weight:bold;
+}
 
-        section {
-            padding: 75px 7%;
-        }
+/* ================= HERO ================= */
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-        }
+.hero{
+    background:
+    linear-gradient(90deg,
+    rgba(255,248,244,.98) 0%,
+    rgba(255,248,244,.90) 40%,
+    rgba(255,248,244,.35) 100%);
+    min-height:650px;
+}
 
-        .section-title {
-            text-align: center;
-            color: #5b2746;
-            font-size: 36px;
-            margin-bottom: 18px;
-        }
+.hero-inner{
+    max-width:1200px;
+    min-height:650px;
+    margin:auto;
+    padding:60px 20px;
 
-        .section-text {
-            text-align: center;
-            max-width: 850px;
-            margin: 0 auto 40px;
-            font-size: 17px;
-        }
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
 
-        .about {
-            background: white;
-        }
+.hero h1{
+    font-size:55px;
+    line-height:1.12;
+    color:#75234e;
+}
 
-        .services {
-            background: #fff1f5;
-        }
+.hero h1 span{
+    color:#c03278;
+}
 
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
+.hero p{
+    margin:22px 0;
+    font-size:19px;
+    color:#684e5c;
+}
 
-        .service-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        }
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
 
-        .service-card h3 {
-            color: #5b2746;
-            margin-bottom: 12px;
-        }
+.btn{
+    padding:14px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        .areas {
-            background: white;
-        }
+.btn-main{
+    background:#b52d70;
+    color:white;
+}
 
-        .area-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 30px;
-        }
+.btn-whatsapp{
+    background:#25D366;
+    color:white;
+}
 
-        .area {
-            background: #f7dce7;
-            color: #5b2746;
-            padding: 10px 18px;
-            border-radius: 25px;
-            font-weight: bold;
-        }
+.hero-photo{
+    width:100%;
+    height:480px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 20px 50px rgba(100,30,70,.25);
+}
 
-        .contact {
-            background: #5b2746;
-            color: white;
-            text-align: center;
-        }
+/* ================= GENERAL ================= */
 
-        .contact .section-title {
-            color: white;
-        }
+section{
+    padding:85px 20px;
+}
 
-        footer {
-            background: #35182a;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+.container{
+    max-width:1150px;
+    margin:auto;
+}
 
-        .whatsapp {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            background: #25D366;
-            color: white;
-            padding: 15px 22px;
-            border-radius: 35px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-            z-index: 2000;
-        }
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
 
-        @media (max-width: 768px) {
+.title h2{
+    color:#75234e;
+    font-size:40px;
+}
 
-            .nav {
-                flex-direction: column;
-                gap: 12px;
-            }
+.title p{
+    max-width:700px;
+    margin:10px auto;
+    color:#725d68;
+}
 
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
+/* ================= ABOUT ================= */
 
-            .hero h1 {
-                font-size: 36px;
-            }
+.about{
+    background:white;
+}
 
-            .hero p {
-                font-size: 17px;
-            }
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
 
-            .service-grid {
-                grid-template-columns: 1fr;
-            }
+.about h2{
+    font-size:40px;
+    color:#75234e;
+    margin-bottom:20px;
+}
 
-            section {
-                padding: 55px 6%;
-            }
-        }
-    </style>
+.about p{
+    margin-bottom:16px;
+    font-size:17px;
+}
+
+.about-box{
+    background:#fff2f7;
+    border-radius:25px;
+    padding:35px;
+    border-left:5px solid #b52d70;
+}
+
+.about-box h3{
+    color:#75234e;
+    margin-bottom:20px;
+    font-size:25px;
+}
+
+.about-box div{
+    margin:12px 0;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    background:#fff8f5;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.service{
+    background:white;
+    padding:32px;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 5px 25px rgba(80,30,60,.08);
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-8px);
+}
+
+.service-icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.service h3{
+    color:#75234e;
+    margin-bottom:10px;
+}
+
+.service p{
+    color:#695663;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+    background:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-card{
+    overflow:hidden;
+    border-radius:22px;
+    background:#f9edf3;
+    box-shadow:0 8px 25px rgba(80,30,60,.12);
+}
+
+.gallery-card img{
+    width:100%;
+    height:330px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.05);
+}
+
+.gallery-card h3{
+    padding:18px;
+    color:#75234e;
+}
+
+/* ================= AREAS ================= */
+
+.areas{
+    background:#fff8f5;
+}
+
+.area-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.area{
+    background:white;
+    color:#75234e;
+    padding:11px 19px;
+    border-radius:25px;
+    box-shadow:0 3px 12px rgba(70,30,60,.08);
+    font-weight:bold;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:linear-gradient(135deg,#75234e,#bd3477);
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.contact p{
+    max-width:700px;
+    margin:0 auto 30px;
+    font-size:18px;
+}
+
+.contact-button{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:16px 32px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:bold;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#321c2b;
+    color:#ddd;
+    text-align:center;
+    padding:30px 15px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+
+.float-wa{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+
+    width:62px;
+    height:62px;
+
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:30px;
+    text-decoration:none;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.25);
+
+    z-index:9999;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    nav{
+        display:none;
+    }
+
+    .hero-inner{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .hero-photo{
+        height:400px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero-photo{
+        height:320px;
+    }
+
+    section{
+        padding:60px 15px;
+    }
+
+    .title h2,
+    .about h2,
+    .contact h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
 </head>
+
 
 <body>
 
+
+<!-- ================= HEADER ================= -->
+
 <header>
-    <div class="nav">
 
-        <div class="logo">
-            Ladies Care Massage
-        </div>
+<div class="nav">
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#areas">Areas</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
+<div class="logo">
 
-    </div>
+<div class="logo-icon">🌸</div>
+
+<div>
+Ladies Care
+<small>MASSAGE</small>
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About Us</a>
+
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#areas">Areas</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<a class="whatsapp"
+href="https://wa.me/923061086161"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+</div>
+
 </header>
 
 
-<!-- HOME -->
+
+<!-- ================= HOME ================= -->
 
 <section class="hero" id="home">
 
-    <div class="hero-content">
+<div class="hero-inner">
 
-        <h1>Professional Home Massage for Women in Lahore</h1>
+<div>
 
-        <p>
-            Ladies Care Massage provides professional and relaxing
-            home massage services exclusively for women.
-            Enjoy comfort, relaxation and wellness in the privacy of your home.
-        </p>
+<h1>
 
-        <a class="btn"
-           href="https://wa.me/923061086161"
-           target="_blank">
-            Book on WhatsApp
-        </a>
+Professional
+<span>Home Massage</span>
+for Women in Lahore
 
-    </div>
+</h1>
+
+<p>
+
+Relax your body, release everyday tension and enjoy a professional massage experience in the comfort and privacy of your home.
+
+</p>
+
+
+<div class="buttons">
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/923061086161"
+target="_blank">
+
+💬 Book on WhatsApp
+
+</a>
+
+
+<a class="btn btn-main"
+href="#services">
+
+View Services
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- HERO IMAGE -->
+
+<img
+class="hero-photo"
+src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=85"
+alt="Professional massage treatment">
+
+
+</div>
 
 </section>
 
 
-<!-- ABOUT US -->
+
+<!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">About Ladies Care Massage</h2>
+<div class="about-grid">
 
-        <p class="section-text">
-            Ladies Care Massage is a professional home massage service
-            designed exclusively for women in Lahore. Our goal is to provide
-            a comfortable, respectful and relaxing massage experience in the
-            privacy of your own home.
-        </p>
+<div>
 
-        <p class="section-text">
-            Whether you want to relax after a busy day, release everyday
-            stress, ease muscle tension or simply enjoy some personal
-            relaxation time, our home massage service is designed around
-            your comfort and wellbeing.
-        </p>
+<h2>About Ladies Care Massage</h2>
 
-    </div>
+<p>
+Ladies Care Massage provides professional home massage services for women in Lahore.
+</p>
+
+<p>
+Our focus is simple: comfort, relaxation, privacy and a peaceful massage experience at home.
+</p>
+
+<p>
+Our services are designed to help women relax after a busy day, reduce everyday muscle tension and enjoy some personal wellness time.
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>Why Choose Ladies Care?</h3>
+
+<div>✓ Home massage service for women</div>
+
+<div>✓ Convenient WhatsApp booking</div>
+
+<div>✓ Relaxation-focused treatments</div>
+
+<div>✓ Comfortable private environment</div>
+
+<div>✓ Service available in selected Lahore areas</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- SERVICES -->
+
+<!-- ================= SERVICES ================= -->
 
 <section class="services" id="services">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">Our Massage Services</h2>
+<div class="title">
 
-        <p class="section-text">
-            Professional massage services for women with a focus on
-            relaxation, comfort and overall body wellness.
-        </p>
+<h2>Our Massage Services</h2>
 
-        <div class="service-grid">
+<p>
+Professional massage treatments designed for relaxation and everyday wellness.
+</p>
 
-            <div class="service-card">
-                <h3>Full Body Massage</h3>
-                <p>
-                    A relaxing full-body massage designed to help release
-                    everyday tension and promote complete relaxation.
-                </p>
-            </div>
+</div>
 
-            <div class="service-card">
-                <h3>Relaxation Massage</h3>
-                <p>
-                    Gentle and calming massage to help reduce stress,
-                    relax the body and create a peaceful experience.
-                </p>
-            </div>
 
-            <div class="service-card">
-                <h3>Swedish Massage</h3>
-                <p>
-                    A professional massage technique focused on relaxation,
-                    circulation and easing everyday muscle tension.
-                </p>
-            </div>
+<div class="services-grid">
 
-            <div class="service-card">
-                <h3>Deep Tissue Massage</h3>
-                <p>
-                    A firmer massage approach designed to help with
-                    areas of muscle tightness and everyday physical tension.
-                </p>
-            </div>
 
-            <div class="service-card">
-                <h3>Back & Shoulder Massage</h3>
-                <p>
-                    Focused massage for the back, shoulders and neck area
-                    to help you unwind after a busy routine.
-                </p>
-            </div>
+<div class="service">
 
-            <div class="service-card">
-                <h3>Leg & Foot Relaxation</h3>
-                <p>
-                    A relaxing treatment focused on tired legs and feet
-                    for a refreshed and comfortable feeling.
-                </p>
-            </div>
+<div class="service-icon">💆‍♀️</div>
 
-        </div>
+<h3>Full Body Massage</h3>
 
-    </div>
+<p>
+A relaxing full-body massage to help release everyday tension and leave you feeling refreshed.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">🌸</div>
+
+<h3>Relaxation Massage</h3>
+
+<p>
+A gentle massage experience for women who want to relax, unwind and enjoy peaceful self-care.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">🌿</div>
+
+<h3>Deep Tissue Massage</h3>
+
+<p>
+Focused massage techniques for areas experiencing everyday muscle tightness and tension.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- SERVICE AREAS -->
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery" id="gallery">
+
+<div class="container">
+
+<div class="title">
+
+<h2>Relaxation Massage Gallery</h2>
+
+<p>
+A peaceful professional massage environment designed around relaxation and comfort.
+</p>
+
+</div>
+
+
+<div class="gallery-grid">
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=85"
+alt="Woman relaxing during professional massage">
+
+<h3>Relaxing Massage</h3>
+
+</div>
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85"
+alt="Professional spa massage">
+
+<h3>Professional Massage</h3>
+
+</div>
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85"
+alt="Home massage relaxation">
+
+<h3>Home Wellness Massage</h3>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= AREAS ================= -->
 
 <section class="areas" id="areas">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">Home Massage Service Areas in Lahore</h2>
+<div class="title">
 
-        <p class="section-text">
-            Ladies Care Massage provides home massage services for women
-            across selected areas of Lahore.
-        </p>
+<h2>Areas We Serve in Lahore</h2>
 
-        <div class="area-list">
+<p>
+Home massage services available for women in the following areas.
+</p>
 
-            <span class="area">Model Town</span>
+</div>
 
-            <span class="area">DHA Phase 1</span>
-            <span class="area">DHA Phase 2</span>
-            <span class="area">DHA Phase 3</span>
-            <span class="area">DHA Phase 4</span>
-            <span class="area">DHA Phase 5</span>
-            <span class="area">DHA Phase 6</span>
-            <span class="area">DHA Phase 7</span>
-            <span class="area">DHA Phase 8</span>
 
-            <span class="area">Gulberg I</span>
-            <span class="area">Gulberg II</span>
-            <span class="area">Gulberg III</span>
+<div class="area-list">
 
-            <span class="area">Askari 10</span>
-            <span class="area">Askari 11</span>
+<span class="area">Model Town</span>
 
-            <span class="area">Wapda Town</span>
-            <span class="area">Johar Town</span>
-            <span class="area">Faisal Town</span>
+<span class="area">DHA Phase 1</span>
+<span class="area">DHA Phase 2</span>
+<span class="area">DHA Phase 3</span>
+<span class="area">DHA Phase 4</span>
+<span class="area">DHA Phase 5</span>
+<span class="area">DHA Phase 6</span>
+<span class="area">DHA Phase 7</span>
+<span class="area">DHA Phase 8</span>
 
-        </div>
+<span class="area">Gulberg I</span>
+<span class="area">Gulberg II</span>
+<span class="area">Gulberg III</span>
 
-    </div>
+<span class="area">Askari 10</span>
+<span class="area">Askari 11</span>
+
+<span class="area">Wapda Town</span>
+
+<span class="area">Johar Town</span>
+
+<span class="area">Faisal Town</span>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- ================= CONTACT ================= -->
 
 <section class="contact" id="contact">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">Book Your Home Massage</h2>
+<h2>Book Your Massage</h2>
 
-        <p class="section-text">
-            Ready to relax? Contact Ladies Care Massage on WhatsApp
-            to discuss your preferred massage service and appointment.
-        </p>
+<p>
+Want to relax at home? Contact Ladies Care Massage through WhatsApp to discuss your massage appointment.
+</p>
 
-        <a class="btn"
-           href="https://wa.me/923061086161"
-           target="_blank">
-            WhatsApp Us
-        </a>
+<a class="contact-button"
+href="https://wa.me/923061086161"
+target="_blank">
 
-        <p style="margin-top:25px;">
-            <strong>Home Massage Service for Women in Lahore</strong>
-        </p>
+💬 Chat on WhatsApp
 
-    </div>
+</a>
+
+</div>
 
 </section>
 
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-    <p>
-        © 2026 Ladies Care Massage. All Rights Reserved.
-    </p>
+<p>
+© 2026 <strong>Ladies Care Massage</strong>
+</p>
 
-    <p>
-        Professional Home Massage Services for Women in Lahore
-    </p>
+<p>
+Professional Home Massage Services for Women in Lahore
+</p>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP BUTTON -->
 
-<a class="whatsapp"
-   href="https://wa.me/923061086161"
-   target="_blank">
-    WhatsApp Booking
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="float-wa"
+href="https://wa.me/923061086161"
+target="_blank">
+
+💬
+
 </a>
+
 
 </body>
 </html>
