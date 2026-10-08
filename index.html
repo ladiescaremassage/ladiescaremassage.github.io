@@ -1,41 +1,734 @@
-<section class="slider">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="slide active" 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ladies Care Massage | Professional Massage Services</title>
+
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+background:#fff8f2;
+color:#333;
+}
+
+
+/* HEADER */
+
+header{
+
+background:#8b5e3c;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:0 12px;
+
+}
+
+
+
+/* SLIDER */
+
+
+.slider{
+
+height:650px;
+position:relative;
+overflow:hidden;
+
+}
+
+
+
+.slide{
+
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+
+opacity:0;
+transition:1.5s;
+
+}
+
+
+
+.slide.active{
+
+opacity:1;
+
+}
+
+
+
+.slide::before{
+
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+
+}
+
+
+
+.slide-content{
+
+position:absolute;
+top:50%;
+left:8%;
+transform:translateY(-50%);
+color:white;
+max-width:650px;
+
+animation:fade 1s;
+
+}
+
+
+
+.slide-content h1{
+
+font-size:50px;
+margin-bottom:20px;
+
+}
+
+
+
+.slide-content p{
+
+font-size:20px;
+margin-bottom:30px;
+
+}
+
+
+
+.btn{
+
+background:#d4a373;
+padding:14px 30px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+
+}
+
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(-30%);
+}
+
+to{
+opacity:1;
+}
+
+}
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+.title{
+
+text-align:center;
+font-size:38px;
+color:#8b5e3c;
+margin-bottom:40px;
+
+}
+
+
+
+/* SERVICES */
+
+
+.services{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px #ddd;
+transition:.4s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.card img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+
+}
+
+
+.card h3{
+
+padding:15px;
+color:#8b5e3c;
+
+}
+
+
+.card p{
+
+padding:0 15px 20px;
+
+}
+
+
+
+/* ABOUT */
+
+
+.about{
+
+background:#f6eadf;
+text-align:center;
+
+}
+
+
+.about p{
+
+font-size:18px;
+line-height:1.7;
+
+}
+
+
+
+/* WHY */
+
+
+.boxes{
+
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+
+}
+
+
+
+.box{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px #ddd;
+text-align:center;
+width:220px;
+
+}
+
+
+
+/* GALLERY */
+
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+
+.gallery img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#8b5e3c;
+color:white;
+padding:50px;
+text-align:center;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+header{
+
+flex-direction:column;
+
+}
+
+
+.slide-content h1{
+
+font-size:32px;
+
+}
+
+
+nav{
+
+margin-top:15px;
+
+}
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+Ladies Care Massage
+</div>
+
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<!-- SLIDER -->
+
+
+<div class="slider">
+
+
+
+<div class="slide active"
 style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874');">
 
+
 <div class="slide-content">
-<h1>Professional Massage Services</h1>
-<p>Relax your body and refresh your mind with our wellness massage experience.</p>
-<a href="#" class="btn">Book Appointment</a>
-</div>
+
+<h1>
+Professional Massage Services For Complete Relaxation
+</h1>
+
+<p>
+Enjoy a comfortable wellness experience with professional massage services.
+</p>
+
+<a class="btn">
+Book Appointment
+</a>
 
 </div>
 
+</div>
 
 
-<div class="slide" 
+
+
+
+<div class="slide"
 style="background-image:url('https://images.unsplash.com/photo-1600334129128-685c5582fd35');">
 
+
 <div class="slide-content">
-<h1>Relaxing Full Body Massage</h1>
-<p>Enjoy a peaceful and comfortable massage session.</p>
-<a href="#" class="btn">View Services</a>
-</div>
+
+<h1>
+Relaxing Full Body Massage
+</h1>
+
+<p>
+Feel refreshed in a peaceful and comfortable environment.
+</p>
+
+<a class="btn">
+View Services
+</a>
 
 </div>
 
+</div>
 
 
-<div class="slide" 
+
+
+
+<div class="slide"
 style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1');">
 
+
 <div class="slide-content">
-<h1>Professional Wellness Care</h1>
-<p>A comfortable environment designed for relaxation.</p>
-<a href="#" class="btn">Contact Us</a>
+
+<h1>
+Professional Wellness Care
+</h1>
+
+<p>
+A relaxing experience designed for your comfort.
+</p>
+
+<a class="btn">
+Contact Us
+</a>
+
 </div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- SERVICES -->
+
+
+<section id="services">
+
+
+<h2 class="title">
+Our Massage Services
+</h2>
+
+
+<div class="services">
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+
+<h3>
+Shoulder Massage
+</h3>
+
+<p>
+Relax your shoulders with a professional massage session.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1">
+
+<h3>
+Back & Waist Massage
+</h3>
+
+<p>
+Comfortable back massage for relaxation and wellness.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef">
+
+<h3>
+Leg Massage
+</h3>
+
+<p>
+Enjoy a relaxing leg massage experience.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
+
+<h3>
+Full Body Massage
+</h3>
+
+<p>
+Complete body relaxation with professional service.
+</p>
+
+</div>
+
+
 
 </div>
 
 
 </section>
+
+
+
+
+
+
+<section id="about" class="about">
+
+
+<h2 class="title">
+About Us
+</h2>
+
+
+<p>
+Ladies Care Massage provides professional massage services in a clean, comfortable and relaxing environment.
+Our goal is to provide a peaceful wellness experience.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Why Choose Us
+</h2>
+
+
+<div class="boxes">
+
+
+<div class="box">
+⭐ Professional Service
+</div>
+
+
+<div class="box">
+⭐ Comfortable Environment
+</div>
+
+
+<div class="box">
+⭐ Relaxing Experience
+</div>
+
+
+<div class="box">
+⭐ Easy Booking
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="gallery">
+
+
+<h2 class="title">
+Massage Gallery
+</h2>
+
+
+<div class="gallery">
+
+
+<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874">
+
+<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+
+<img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer id="contact">
+
+
+<h2>
+Ladies Care Massage
+</h2>
+
+<p>
+WhatsApp: Your Number Here
+</p>
+
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<script>
+
+
+let slides=document.querySelectorAll(".slide");
+
+let index=0;
+
+
+setInterval(()=>{
+
+
+slides[index].classList.remove("active");
+
+
+index++;
+
+
+if(index>=slides.length){
+
+index=0;
+
+}
+
+
+slides[index].classList.add("active");
+
+
+
+},5000);
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
