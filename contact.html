@@ -4,96 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Ladies Care Massage to enquire about massage prices and night-time appointments.">
+  <meta name="description" content="Contact Ladies Care Massage on WhatsApp to ask about massage services, prices and night-time appointments.">
   <title>Contact Us | Ladies Care Massage</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <a class="logo" href="index.html">✿ Ladies Care <small>MASSAGE</small></a>
-  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-  <nav class="nav">
-    <a href="index.html">Home</a><a href="about.html">About Us</a>
-    <a href="services.html">Services</a><a class="active" href="contact.html">Contact Us</a>
-  </nav>
-  <a class="header-btn" target="_blank" href="https://wa.me/923061086161">WhatsApp Booking</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html"><span class="logo-mark">❀</span><span>Ladies Care <small>MASSAGE & WELLNESS</small></span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a class="active" href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-gold nav-cta" href="https://wa.me/923061086161">Book Now</a>
+  </div>
 </header>
 
 <main>
-<section class="page-banner">
-  <p class="eyebrow">CONTACT & APPOINTMENTS</p>
-  <h1>Book a Night-Time Appointment</h1>
-  <p>Send your enquiry and confirm the service, final price and availability.</p>
-</section>
-
-<section class="section light contact-layout">
-  <div class="contact-info">
-    <p class="eyebrow dark">GET IN TOUCH</p>
-    <h2>Contact Us on WhatsApp</h2>
-    <p>Tell us which massage service you are interested in. We will need to confirm the appointment time, duration and final price with you.</p>
-
-    <div class="contact-item">
-      <span>☏</span>
-      <div><strong>WhatsApp / Phone</strong><p>0306 1086161</p></div>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">WE'RE HERE TO HELP</span>
+      <h1>Contact <span>Us</span></h1>
+      <p>Get in touch to ask about our massage services, prices and available appointment times.</p>
     </div>
-    <div class="contact-item">
-      <span>☾</span>
-      <div><strong>Appointment hours</strong><p>Night-time only. No daytime appointments.</p></div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <span class="eyebrow">GET IN TOUCH</span>
+        <div class="contact-card">
+          <h3>WhatsApp Booking</h3>
+          <p>Message us to enquire about a service or request an appointment.</p>
+          <p><a href="https://wa.me/923061086161">0306 1086161 — Chat Now ↗</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Appointment Hours</h3>
+          <p>Appointments are available at night only.</p>
+          <p>Please contact us in advance to confirm the available time.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Before You Book</h3>
+          <p>Please ask us to confirm the service price, session duration and appointment details before your visit.</p>
+        </div>
+      </div>
+
+      <img class="contact-visual" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=85" alt="Peaceful spa environment">
     </div>
-    <div class="contact-item">
-      <span>✧</span>
-      <div><strong>Our services</strong><p>Shoulder, back, neck and upper-body, and full-body relaxation massage.</p></div>
+  </section>
+
+  <section class="booking-banner">
+    <div class="container booking-inner">
+      <div><span class="eyebrow">QUICK & CONVENIENT</span><h2>Book Through WhatsApp</h2><p>Start a conversation with us about your preferred massage service.</p><small>Night-time appointments only. Advance booking required.</small></div>
+      <a class="btn btn-gold" href="https://wa.me/923061086161?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20night-time%20appointment.">Message Us ↗</a>
     </div>
-
-    <a class="btn green" target="_blank"
-       href="https://wa.me/923061086161?text=Assalam-o-Alaikum%2C%20I%20would%20like%20to%20ask%20about%20a%20night-time%20massage%20appointment.">Start WhatsApp Chat</a>
-  </div>
-
-  <div class="booking-box">
-    <h2>Appointment Enquiry</h2>
-    <p>Complete the form to prepare a message in WhatsApp. Your booking is not confirmed until we reply.</p>
-
-    <form id="bookingForm">
-      <label for="customerName">Your Name</label>
-      <input id="customerName" type="text" placeholder="Enter your name" required>
-
-      <label for="service">Select Massage Service</label>
-      <select id="service" required>
-        <option value="">Choose a service</option>
-        <option>Shoulder Massage</option>
-        <option>Back / Kamar Massage</option>
-        <option>Neck to Upper-Body Massage</option>
-        <option>Full-Body Relaxation Massage</option>
-      </select>
-
-      <label for="appointmentTime">Preferred Night-Time</label>
-      <select id="appointmentTime" required>
-        <option value="">Choose a time</option>
-        <option>8 PM – 10 PM</option>
-        <option>10 PM – Midnight</option>
-        <option>Midnight – 2 AM</option>
-        <option>2 AM – 5 AM</option>
-        <option>Flexible night-time</option>
-      </select>
-
-      <label for="details">Additional Details (Optional)</label>
-      <textarea id="details" rows="4" placeholder="Ask about prices, duration or service details"></textarea>
-
-      <button class="btn gold full" type="submit">Send Enquiry on WhatsApp</button>
-      <p class="form-note">This form opens WhatsApp with your message. It does not store your details on this website.</p>
-    </form>
-  </div>
-</section>
+  </section>
 </main>
 
-<footer class="footer">
-  <a class="logo" href="index.html">✿ Ladies Care <small>MASSAGE</small></a>
-  <p>Shoulder Massage • Back Massage • Neck & Upper Body • Full-Body Relaxation</p>
-  <p>Night-time appointments only. Confirm availability before travelling.</p>
-  <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact Us</a></div>
-  <small>© <span class="year"></span> Ladies Care Massage</small>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="logo footer-logo" href="index.html"><span class="logo-mark">❀</span><span>Ladies Care <small>MASSAGE & WELLNESS</small></span></a><p class="footer-about">A calm space to pause, relax and make time for yourself.</p></div>
+    <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Our Services</a><a href="contact.html">Contact</a></div>
+    <div><h4>Appointments</h4><p>Night-time appointments only</p><p>Advance booking required</p><a href="https://wa.me/923061086161">WhatsApp: 0306 1086161</a></div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 Ladies Care Massage. All rights reserved.</div></div>
 </footer>
-<a class="whatsapp-float" target="_blank" aria-label="WhatsApp" href="https://wa.me/923061086161">☏</a>
-<script src="script.js"></script>
+<a class="whatsapp-float" href="https://wa.me/923061086161" aria-label="Chat on WhatsApp">☏</a>
 </body>
 </html>
