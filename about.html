@@ -1,358 +1,107 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>About Us | Ladies Care Massage Lahore</title>
-
-    <meta name="description" content="Learn about Ladies Care Massage, professional home massage services for women in Lahore. Relax, feel comfortable and enjoy massage in the privacy of your home.">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #fffaf8;
-            color: #54203f;
-            line-height: 1.7;
-        }
-
-        header {
-            background: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-            color: #7b2458;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #54203f;
-            margin-left: 25px;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: #c02d76;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #fff2f5, #fce4ef);
-            text-align: center;
-            padding: 90px 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            color: #762454;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 18px;
-            color: #63354e;
-        }
-
-        .section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 70px 25px;
-        }
-
-        .section h2 {
-            text-align: center;
-            font-size: 35px;
-            color: #762454;
-            margin-bottom: 25px;
-        }
-
-        .section p {
-            font-size: 17px;
-            margin-bottom: 18px;
-            color: #5d4050;
-        }
-
-        .box-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .box {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(100,30,70,0.10);
-            text-align: center;
-        }
-
-        .box h3 {
-            color: #9b2867;
-            margin-bottom: 12px;
-            font-size: 22px;
-        }
-
-        .areas {
-            background: #fff0f5;
-            text-align: center;
-        }
-
-        .areas-list {
-            max-width: 900px;
-            margin: 30px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-        }
-
-        .area {
-            background: white;
-            padding: 10px 18px;
-            border-radius: 30px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-            color: #762454;
-            font-weight: 600;
-        }
-
-        .cta {
-            text-align: center;
-            padding: 70px 20px;
-            background: linear-gradient(135deg, #762454, #b72f73);
-            color: white;
-        }
-
-        .cta h2 {
-            font-size: 35px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            margin-bottom: 25px;
-            font-size: 18px;
-        }
-
-        .whatsapp {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-size: 17px;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #40152f;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media(max-width: 768px) {
-
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
-
-            .hero h1 {
-                font-size: 35px;
-            }
-
-            .box-container {
-                grid-template-columns: 1fr;
-            }
-
-            .section h2 {
-                font-size: 28px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Ladies Care Massage</title>
+  <meta name="description" content="Learn about Ladies Care Massage, our approach to comfort, relaxation and wellness services.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-
-    <div class="logo">
-        Ladies Care Massage
-    </div>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-
+<header class="site-header">
+  <a href="index.html" class="logo">Ladies Care <span>Massage</span></a>
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
 </header>
 
-
-<section class="hero">
-
+<main>
+<section class="page-banner about-banner">
+  <div>
+    <p class="eyebrow">GET TO KNOW US</p>
     <h1>About Ladies Care Massage</h1>
-
-    <p>
-        Professional home massage services for women in Lahore,
-        focused on comfort, relaxation, privacy and personal care.
-    </p>
-
+    <p>Comfort, personal care and a welcoming wellness experience.</p>
+  </div>
 </section>
 
+<section class="about-preview section">
+  <div>
+    <p class="eyebrow">OUR APPROACH</p>
+    <h2>Relaxation Starts With Comfort</h2>
+    <p>
+      Ladies Care Massage helps visitors explore massage and wellness
+      services in a calm and welcoming setting.
+    </p>
+    <p>
+      We believe clear communication, respect and understanding
+      personal preferences are important parts of a positive experience.
+    </p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1000&q=85"
+    alt="Calm spa interior"
+    loading="lazy">
+</section>
 
 <section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">OUR VALUES</p>
+    <h2>What Matters to Us</h2>
+  </div>
 
-    <h2>Professional Home Massage for Women</h2>
+  <div class="service-grid">
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=85" alt="Peaceful wellness environment" loading="lazy">
+      <div class="card-content">
+        <h3>Comfort</h3>
+        <p>A welcoming environment where visitors can ask questions.</p>
+      </div>
+    </article>
 
-    <p>
-        Ladies Care Massage provides professional home massage services
-        for women in Lahore. Our goal is to provide a comfortable,
-        relaxing and convenient massage experience in the privacy of
-        your own home.
-    </p>
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=85" alt="Massage therapy setting" loading="lazy">
+      <div class="card-content">
+        <h3>Personal Care</h3>
+        <p>Helping visitors explore options that suit their preferences.</p>
+      </div>
+    </article>
 
-    <p>
-        Our massage services are designed to help women relax after
-        a busy day, release everyday stress and reduce general muscle
-        tension. Clients can book a convenient appointment through
-        WhatsApp and enjoy a professional home-service experience.
-    </p>
-
-    <p>
-        We focus on respectful service, cleanliness, comfort and
-        client satisfaction. Every appointment is arranged in advance
-        so that the service can be provided in a calm and comfortable
-        environment.
-    </p>
-
+    <article class="service-card">
+      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=85" alt="Relaxing spa room" loading="lazy">
+      <div class="card-content">
+        <h3>Relaxation</h3>
+        <p>Making time for yourself and your personal well-being.</p>
+      </div>
+    </article>
+  </div>
 </section>
 
-
-<section class="section">
-
-    <h2>Why Choose Ladies Care Massage?</h2>
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>Home Service</h3>
-            <p>
-                Enjoy your massage in the comfort and privacy of
-                your own home.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>Women Clients</h3>
-            <p>
-                Our services are specially focused on providing
-                comfortable massage experiences for women.
-            </p>
-        </div>
-
-        <div class="box">
-            <h3>Relaxation</h3>
-            <p>
-                Take time to relax, release everyday stress and
-                enjoy a comfortable massage session.
-            </p>
-        </div>
-
-    </div>
-
+<section class="booking-banner">
+  <h2>Want to Learn More?</h2>
+  <p>Contact us to ask about our services.</p>
+  <a href="contact.html" class="btn">Contact Us</a>
 </section>
+</main>
 
-
-<section class="section areas">
-
-    <h2>Our Service Areas in Lahore</h2>
-
-    <p>
-        Home massage appointments are available in selected areas
-        across Lahore.
-    </p>
-
-    <div class="areas-list">
-
-        <span class="area">Model Town</span>
-
-        <span class="area">DHA Phase 1</span>
-        <span class="area">DHA Phase 2</span>
-        <span class="area">DHA Phase 3</span>
-        <span class="area">DHA Phase 4</span>
-        <span class="area">DHA Phase 5</span>
-        <span class="area">DHA Phase 6</span>
-        <span class="area">DHA Phase 7</span>
-        <span class="area">DHA Phase 8</span>
-
-        <span class="area">Gulberg I</span>
-        <span class="area">Gulberg II</span>
-        <span class="area">Gulberg III</span>
-
-        <span class="area">Askari 10</span>
-        <span class="area">Askari 11</span>
-
-        <span class="area">Wapda Town</span>
-        <span class="area">Johar Town</span>
-        <span class="area">Faisal Town</span>
-
-    </div>
-
-</section>
-
-
-<section class="cta">
-
-    <h2>Ready to Relax?</h2>
-
-    <p>
-        Contact us on WhatsApp to ask about availability and
-        book your home massage appointment.
-    </p>
-
-    <a class="whatsapp"
-       href="https://wa.me/923061086161"
-       target="_blank">
-
-        Book on WhatsApp
-
-    </a>
-
-</section>
-
-
-<footer>
-
-    <p>
-        © 2026 Ladies Care Massage Lahore. All Rights Reserved.
-    </p>
-
+<footer class="site-footer">
+  <p>© 2026 Ladies Care Massage. All rights reserved.</p>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
+```
