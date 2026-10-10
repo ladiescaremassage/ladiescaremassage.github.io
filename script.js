@@ -1,48 +1,61 @@
-```javascript
-// Homepage image slider
-const slides = document.querySelectorAll(".slide");
 
-if (slides.length > 0) {
-  let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
 
-  setInterval(() => {
-    slides[currentSlide].classList.remove("active");
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add("active");
-  }, 5000);
-}
+  // Mobile navigation
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+      toggle.textContent = isOpen ? "×" : "☰";
+    });
 
-// Mobile navigation
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open navigation");
+        toggle.textContent = "☰";
+      });
+    });
+  }
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
+  // Automatically update copyright year
+  document.querySelectorAll("[data-year]").forEach(element => {
+    element.textContent = new Date().getFullYear();
   });
-}
 
-// WhatsApp number
-const whatsappNumber = "923061086161";
+  // Contact form opens WhatsApp with a prepared message
+  const form = document.getElementById("whatsapp-form");
 
-// Contact form
-const contactForm = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", event => {
+      event.preventDefault();
 
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const interest = document.getElementById("interest").value;
+      const message = document.getElementById("message").value.trim();
 
-    const name = document.getElementById("name").value.trim();
-    const service = document.getElementById("service").value;
-    const message = document.getElementById("message").value.trim();
+      const text = [
+        "Hello Ladies Care Massage!",
+        "",
+        "My name is " + name + ".",
+        "I'm enquiring about: " + interest + ".",
+        "Message: " + message,
+        "",
+        "Please share availability and confirm the details."
+      ].join("\n");
 
-    const whatsappMessage =
-      `Hello, my name is ${name}. I am interested in: ${service}. My message: ${message}`;
+      const whatsappURL =
+        "https://wa.me/923061086161?text=" +
+        encodeURIComponent(text);
 
-    const whatsappUrl =
-      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-  });
-}
-```
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+  }
+});
