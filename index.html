@@ -1,31 +1,186 @@
-
+```html
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ladies Care Massage | Relaxing Massage & Night Appointments</title>
-  <meta name="description" content="Explore Ladies Care Massage services, relaxing sessions and advance night-time appointments for women. Contact us for prices and availability.">
-  <meta name="keywords" content="Ladies Care Massage, massage for women, relaxation massage, night massage appointments, massage packages, WhatsApp booking">
+
+  <title>Ladies Care Massage | Massage Services & Night Packages</title>
+  <meta name="description" content="Explore professional massage services for adult women, including relaxation, lower back, neck and shoulder, upper body and full body massage. View night packages and contact us on WhatsApp to book.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://ladiescaremassage.github.io/">
-  <meta property="og:title" content="Ladies Care Massage">
-  <meta property="og:description" content="Explore relaxing massage sessions and night-time appointment options.">
-  <meta property="og:url" content="https://ladiescaremassage.github.io/">
   <meta name="theme-color" content="#f8eee9">
+
+  <meta property="og:title" content="Ladies Care Massage">
+  <meta property="og:description" content="Explore massage services for women and our 4-hour and 8-hour night packages.">
+  <meta property="og:url" content="https://ladiescaremassage.github.io/">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Homepage additions */
+    .home-intro {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 32px;
+    }
+
+    .home-service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .home-service-grid .service-card {
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .home-service-grid .service-card img {
+      display: block;
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .home-service-grid .card-body {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 230px);
+    }
+
+    .home-service-grid .card-link {
+      margin-top: auto;
+      padding-top: 18px;
+    }
+
+    .home-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .home-gallery-grid img {
+      width: 100%;
+      height: 175px;
+      display: block;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #ead6d0;
+      background: #f8eee9;
+    }
+
+    .women-note {
+      text-align: center;
+      margin: 0 auto 26px;
+      max-width: 760px;
+      color: #79666a;
+    }
+
+    .home-deals-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .home-deals-grid .deal-card {
+      min-width: 0;
+    }
+
+    .home-deals-grid .price {
+      margin: 16px 0;
+    }
+
+    .home-deals-grid .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .home-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 30px;
+      border-radius: 18px;
+      background: #f7e7e7;
+    }
+
+    .home-cta h2 {
+      margin: 6px 0 10px;
+    }
+
+    .home-cta p {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 900px) {
+      .home-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .home-gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .home-gallery-grid img {
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .home-service-grid,
+      .home-deals-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .home-service-grid .service-card img {
+        height: 220px;
+      }
+
+      .home-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .home-gallery-grid img {
+        height: 135px;
+      }
+
+      .home-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 <header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">✿</span><span><strong>Ladies Care Massage</strong><small>RELAX · REFRESH · RECONNECT</small></span></a>
+  <a class="brand" href="index.html">
+    <span class="brand-mark">✿</span>
+    <span>
+      <strong>Ladies Care Massage</strong>
+      <small>RELAX · REFRESH · RECONNECT</small>
+    </span>
+  </a>
+
   <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
   <nav class="nav">
     <a class="active" href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Services</a>
-    <a href="#deals">Deals</a>
+    <a href="#deals">Night Packages</a>
     <a href="#gallery">Gallery</a>
     <a href="contact.html">Contact</a>
     <a class="nav-book" href="https://wa.me/923061086161" target="_blank" rel="noopener">Book Now ↗</a>
@@ -33,95 +188,321 @@
 </header>
 
 <main>
-<section class="hero">
-  <img class="hero-image" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1900&q=85" alt="Peaceful massage spa room with warm lighting">
-  <div class="hero-shade"></div>
-  <div class="hero-content">
-    <p class="eyebrow light">A MOMENT JUST FOR YOU</p>
-    <h1>Relax, refresh<br><em>and feel renewed.</em></h1>
-    <p class="hero-copy">Discover relaxing massage sessions in a calm, welcoming setting. Advance booking is recommended for night-time appointments.</p>
-    <div class="hero-actions">
-      <a class="button button-rose" href="contact.html">Book Your Session ↗</a>
-      <a class="text-link light-link" href="services.html">Explore services →</a>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img
+      class="hero-image"
+      src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1900&q=85"
+      alt="Calming spa environment prepared for a professional massage">
+
+    <div class="hero-shade"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow light">PROFESSIONAL MASSAGE</p>
+      <h1>Relax, refresh<br><em>and feel renewed.</em></h1>
+      <p class="hero-copy">
+        Explore professional massage services for adult women in a calm,
+        comfortable setting. Contact us to arrange an appointment.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-rose"
+           href="https://wa.me/923061086161?text=Hello%2C%20I%20would%20like%20to%20book%20a%20massage%20appointment."
+           target="_blank" rel="noopener">Book on WhatsApp ↗</a>
+
+        <a class="text-link light-link" href="#services">Explore Services →</a>
+      </div>
+
+      <p class="hero-note">✦ Advance Booking · Clear Prices · Personal Care</p>
     </div>
-    <p class="hero-note">✦ Advance appointments · Clear pricing · Personal care</p>
-  </div>
-  <div class="hero-label">YOUR TIME TO UNWIND<strong>Comfort in every detail</strong></div>
-</section>
 
-<section class="trust-strip container">
-  <div><span class="trust-icon">♡</span><span><strong>Comfort First</strong><small>A calm, respectful experience</small></span></div>
-  <div><span class="trust-icon">✧</span><span><strong>Advance Booking</strong><small>Plan your preferred time</small></span></div>
-  <div><span class="trust-icon">❋</span><span><strong>Clear Information</strong><small>Ask about services and rates</small></span></div>
-  <div><span class="trust-icon">◷</span><span><strong>Night Sessions</strong><small>4-hour and 8-hour options</small></span></div>
-</section>
-
-<section class="section container">
-  <div class="section-heading">
-    <p class="eyebrow">TAKE A BREATH</p>
-    <h2>Care that helps you unwind</h2>
-    <p>Explore the available session options and contact us to confirm details before booking.</p>
-  </div>
-  <div class="service-grid">
-    <article class="service-card">
-      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="Relaxing massage treatment" loading="lazy">
-      <div class="card-body"><span class="card-kicker">01 / RELAX</span><h3>Relaxation Massage</h3><p>A calming session designed to help you slow down and unwind.</p><a class="card-link" href="services.html">View details →</a></div>
-    </article>
-    <article class="service-card">
-      <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80" alt="Peaceful spa treatment room" loading="lazy">
-      <div class="card-body"><span class="card-kicker">02 / RESTORE</span><h3>Back & Shoulder Care</h3><p>Ask about a session focused on areas affected by everyday tension.</p><a class="card-link" href="services.html">View details →</a></div>
-    </article>
-    <article class="service-card">
-      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Luxury spa room prepared for a massage appointment" loading="lazy">
-      <div class="card-body"><span class="card-kicker">03 / RECHARGE</span><h3>Extended Sessions</h3><p>Explore longer appointment options and confirm availability in advance.</p><a class="card-link" href="services.html#night-packages">View packages →</a></div>
-    </article>
-  </div>
-</section>
-
-<section class="deal-section" id="deals">
-  <div class="container">
-    <div class="section-heading"><p class="eyebrow">A LITTLE MORE TIME FOR YOU</p><h2>Night session packages</h2><p>Choose your preferred duration and message us to confirm availability and package details.</p></div>
-    <div class="deal-grid">
-      <article class="deal-card">
-        <div class="deal-top"><span class="deal-label">4 HOURS</span><span class="deal-flower">✿</span></div>
-        <h3>Night Session</h3><p>Four-hour booking window</p><div class="price">Rs. 2,000</div>
-        <ul><li>Advance booking required</li><li>Confirm service details first</li><li>Availability subject to confirmation</li></ul>
-        <a class="button button-dark" href="https://wa.me/923061086161?text=Hello%2C%20please%20share%20availability%20for%20the%204-hour%20night%20session." target="_blank" rel="noopener">Ask About This Deal ↗</a>
-      </article>
-      <article class="deal-card deal-featured">
-        <div class="deal-top"><span class="deal-label">8 HOURS</span><span class="popular-pill">FULL NIGHT</span></div>
-        <h3>Full-Night Session</h3><p>Eight-hour booking window</p><div class="price">Rs. 4,000</div>
-        <ul><li>Double the 4-hour package price</li><li>Advance booking required</li><li>Confirm availability and inclusions</li></ul>
-        <a class="button button-rose" href="https://wa.me/923061086161?text=Hello%2C%20please%20share%20availability%20for%20the%208-hour%20full-night%20session." target="_blank" rel="noopener">Ask About This Deal ↗</a>
-      </article>
+    <div class="hero-label">
+      YOUR COMFORT MATTERS
+      <strong>Time to relax and unwind</strong>
     </div>
-    <p class="fine-print">Confirm final prices, service details and availability directly before booking.</p>
-  </div>
-</section>
+  </section>
 
-<section class="section container" id="gallery">
-  <div class="section-heading"><p class="eyebrow">A CALMING SPACE</p><h2>A glimpse of the experience</h2><p>Warm details, quiet surroundings and a welcoming atmosphere.</p></div>
-  <div class="gallery-grid">
-    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80" alt="Serene spa interior in warm tones" loading="lazy">
-    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=80" alt="Massage table in a relaxing treatment room" loading="lazy">
-    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80" alt="Spa environment prepared for a massage" loading="lazy">
-  </div>
-</section>
+  <!-- TRUST STRIP -->
+  <section class="trust-strip container">
+    <div>
+      <span class="trust-icon">♡</span>
+      <span><strong>Comfort First</strong><small>A calm, respectful experience</small></span>
+    </div>
+    <div>
+      <span class="trust-icon">✧</span>
+      <span><strong>Advance Booking</strong><small>Plan your preferred time</small></span>
+    </div>
+    <div>
+      <span class="trust-icon">❋</span>
+      <span><strong>Clear Information</strong><small>Ask about services and rates</small></span>
+    </div>
+    <div>
+      <span class="trust-icon">◷</span>
+      <span><strong>Night Packages</strong><small>4-hour and 8-hour options</small></span>
+    </div>
+  </section>
 
-<section class="cta-band">
-  <div class="container cta-inner"><div><p class="eyebrow light">YOUR TIME, YOUR COMFORT</p><h2>Ready to plan a relaxing session?</h2><p>Message us to ask questions and arrange an advance appointment.</p></div><a class="button button-light" href="contact.html">Contact & Booking →</a></div>
-</section>
+  <!-- SIX SERVICES -->
+  <section class="section container" id="services">
+    <div class="section-heading home-intro">
+      <p class="eyebrow">OUR SERVICES</p>
+      <h2>Massage Services for Women</h2>
+      <p>
+        Explore our massage options and choose a session that suits your needs.
+        Please confirm service details and availability before booking.
+      </p>
+    </div>
+
+    <p class="women-note">
+      Professional massage appointments for adult women.
+      Treatment areas and session details are agreed upon before each appointment.
+    </p>
+
+    <div class="home-service-grid">
+
+      <article class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
+          alt="Relaxation massage in a professional spa"
+          loading="lazy">
+        <div class="card-body">
+          <span class="card-kicker">01 / RELAX</span>
+          <h3>Relaxation Massage</h3>
+          <p>A calming session designed to help you slow down, unwind and enjoy a peaceful break.</p>
+          <a class="card-link" href="services.html">View details →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80"
+          alt="Back massage treatment in a relaxing spa"
+          loading="lazy">
+        <div class="card-body">
+          <span class="card-kicker">02 / LOWER BACK</span>
+          <h3>Lower Back Massage</h3>
+          <p>A focused session for the lower back area to promote relaxation and comfort.</p>
+          <a class="card-link" href="services.html">View details →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+          alt="Peaceful spa treatment room"
+          loading="lazy">
+        <div class="card-body">
+          <span class="card-kicker">03 / NECK & SHOULDERS</span>
+          <h3>Neck & Shoulder Massage</h3>
+          <p>A dedicated session for the neck and shoulders after a busy day.</p>
+          <a class="card-link" href="services.html">View details →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
+          alt="Professional wellness massage setting"
+          loading="lazy">
+        <div class="card-body">
+          <span class="card-kicker">04 / UPPER BODY</span>
+          <h3>Neck-to-Abdomen Massage</h3>
+          <p>Ask about a session covering agreed areas from the neck through the upper body and abdomen.</p>
+          <a class="card-link" href="services.html">View details →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+          alt="Comfortable spa room for a full body massage"
+          loading="lazy">
+        <div class="card-body">
+          <span class="card-kicker">05 / FULL BODY</span>
+          <h3>Full Body Massage</h3>
+          <p>A relaxation session covering agreed body areas, tailored to your preferences.</p>
+          <a class="card-link" href="services.html">View details →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img
+          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+          alt="Peaceful wellness and relaxation environment"
+          loading="lazy">
+        <div class="card-body">
+          <span class="card-kicker">06 / INDIVIDUAL AREAS</span>
+          <h3>Individual Body Area Massage</h3>
+          <p>Ask about focused sessions for areas such as the arms, legs, hands or feet.</p>
+          <a class="card-link" href="services.html">View details →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin-top:30px">
+      <a class="button button-dark" href="services.html">Explore All Services →</a>
+    </div>
+  </section>
+
+  <!-- NIGHT PACKAGES WITH PRICES -->
+  <section class="deal-section" id="deals">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">NIGHT-TIME BOOKINGS</p>
+        <h2>Choose Your Night Package</h2>
+        <p>Choose your preferred duration and message us to confirm appointment availability and package details.</p>
+      </div>
+
+      <div class="home-deals-grid">
+
+        <article class="deal-card">
+          <div class="deal-top">
+            <span class="deal-label">4 HOURS</span>
+            <span class="deal-flower">✿</span>
+          </div>
+
+          <h3>Half-Night Package</h3>
+          <p>Four-hour booking window</p>
+          <div class="price">Rs. 2,000</div>
+
+          <ul>
+            <li>Advance booking required</li>
+            <li>Confirm service details first</li>
+            <li>Availability subject to confirmation</li>
+          </ul>
+
+          <a class="button button-dark"
+             href="https://wa.me/923061086161?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20the%204-hour%20Half-Night%20Package%20for%20Rs.%202000."
+             target="_blank" rel="noopener">Enquire on WhatsApp ↗</a>
+        </article>
+
+        <article class="deal-card deal-featured">
+          <div class="deal-top">
+            <span class="deal-label">8 HOURS</span>
+            <span class="popular-pill">FULL NIGHT</span>
+          </div>
+
+          <h3>Full-Night Package</h3>
+          <p>Eight-hour booking window</p>
+          <div class="price">Rs. 4,000</div>
+
+          <ul>
+            <li>Double the 4-hour package price</li>
+            <li>Advance booking required</li>
+            <li>Confirm service inclusions first</li>
+          </ul>
+
+          <a class="button button-rose"
+             href="https://wa.me/923061086161?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20the%208-hour%20Full-Night%20Package%20for%20Rs.%204000."
+             target="_blank" rel="noopener">Enquire on WhatsApp ↗</a>
+        </article>
+
+      </div>
+
+      <p class="fine-print">
+        Please confirm final prices, service details and appointment availability directly before booking.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY: TEN IMAGES -->
+  <section class="section container" id="gallery">
+    <div class="section-heading">
+      <p class="eyebrow">OUR GALLERY</p>
+      <h2>A Glimpse of the Experience</h2>
+      <p>Explore our massage and spa gallery for a feel of the relaxing atmosphere.</p>
+    </div>
+
+    <div class="home-gallery-grid">
+      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
+           alt="Professional massage treatment" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80"
+           alt="Relaxing spa treatment room" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+           alt="Spa environment with a calming atmosphere" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
+           alt="Wellness and massage setting" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+           alt="Relaxation and personal care" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80"
+           alt="Massage session in a spa" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80"
+           alt="Professional spa treatment setting" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80"
+           alt="Peaceful spa interior" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80"
+           alt="Massage and wellness environment" loading="lazy">
+
+      <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+           alt="Calm atmosphere for a relaxing appointment" loading="lazy">
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <div>
+        <p class="eyebrow light">YOUR TIME, YOUR COMFORT</p>
+        <h2>Ready to Plan Your Session?</h2>
+        <p>Message us to ask questions and arrange an advance appointment.</p>
+      </div>
+
+      <a class="button button-light"
+         href="https://wa.me/923061086161?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20massage%20services."
+         target="_blank" rel="noopener">Contact & Booking ↗</a>
+    </div>
+  </section>
+
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-main">
-    <a class="brand footer-brand" href="index.html"><span class="brand-mark">✿</span><span><strong>Ladies Care Massage</strong><small>RELAX · REFRESH · RECONNECT</small></span></a>
-    <div><h3>Explore</h3><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
-    <div><h3>Appointments</h3><a href="https://wa.me/923061086161" target="_blank" rel="noopener">WhatsApp booking</a><span>Advance booking recommended</span></div>
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">✿</span>
+      <span>
+        <strong>Ladies Care Massage</strong>
+        <small>RELAX · REFRESH · RECONNECT</small>
+      </span>
+    </a>
+
+    <div>
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h3>Appointments</h3>
+      <a href="https://wa.me/923061086161" target="_blank" rel="noopener">WhatsApp Booking</a>
+      <span>Advance booking recommended</span>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© <span data-year></span> Ladies Care Massage</span><span>Relaxation · Comfort · Care</span></div>
+
+  <div class="container footer-bottom">
+    <span>© <span data-year></span> Ladies Care Massage</span>
+    <span>Relaxation · Comfort · Care</span>
+  </div>
 </footer>
-<a class="floating-wa" href="https://wa.me/923061086161" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">☏</a>
+
+<a class="floating-wa"
+   href="https://wa.me/923061086161"
+   aria-label="Chat on WhatsApp"
+   target="_blank" rel="noopener">☏</a>
+
 <script src="script.js" defer></script>
 </body>
 </html>
+```
